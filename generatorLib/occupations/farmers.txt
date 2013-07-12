@@ -1,0 +1,10 @@
+ackerman(freeman):1
+farmer(freeman):5
+fowler(freeman):2
+gamekeeper(freeman):1
+goat herder(freeman):2
+plowman(freeman):2
+shepherd(freeman):4
+swine herder(freeman):2
+tillerman(freeman):2
+hunter:4

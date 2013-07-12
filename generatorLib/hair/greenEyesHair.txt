@@ -1,0 +1,4 @@
+auburn:2
+brown:40
+black:5
+fair:40

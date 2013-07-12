@@ -1,0 +1,22 @@
+midwife:3
+actuary:3
+butler:1
+barrister:1
+bather:10
+carter:2
+cellarer:1
+chimney sweep:3
+clouter:3
+cook:2
+ditcher:1
+dog trainer:1
+executioner:1
+falconer:1
+gardner:2
+horse groomer:2
+horse trainer:1
+miller:3
+potboy:1
+prostitute:1
+scullion:10
+surgeon:2

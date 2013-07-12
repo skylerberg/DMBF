@@ -1,0 +1,3 @@
+short:10
+medium:20
+long:20

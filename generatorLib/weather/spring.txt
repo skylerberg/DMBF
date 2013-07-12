@@ -1,0 +1,10 @@
+snow:10
+rain:30
+overcast:20
+fog:10
+sun:30
+thunder and lightning:1
+hailstorm:1
+earthquake:1
+heavy wind:1
+heatwave: 1

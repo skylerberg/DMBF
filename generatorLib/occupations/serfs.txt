@@ -1,0 +1,9 @@
+ackerman(serf):1
+farmer(serf):5
+fowler(serf):2
+gamekeeper(serf):1
+goat herder(serf):2
+plowman(serf):2
+shepherd(serf):4
+swine herder(serf):2
+tillerman(serf):2

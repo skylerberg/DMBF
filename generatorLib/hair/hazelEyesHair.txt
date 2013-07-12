@@ -1,0 +1,5 @@
+auburn:2
+brown:10
+black:10
+fair:20
+red:3

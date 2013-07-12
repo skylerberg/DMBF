@@ -1,0 +1,3 @@
+straight:3
+wavy:2
+curly:1

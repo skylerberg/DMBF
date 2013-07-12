@@ -1,0 +1,5 @@
+tavern:1200
+church:1500
+Armory:5000
+Towers:7000
+Mansions:2500

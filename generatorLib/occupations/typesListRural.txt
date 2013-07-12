@@ -1,0 +1,13 @@
+coastal:3
+crafts:2
+criminal:1
+entertainers:1
+farmers:10
+governmental:1
+mercantile:2
+military:1
+ordinary:1
+religious:2
+scholarly:2
+serfs:30
+services:1

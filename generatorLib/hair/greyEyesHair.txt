@@ -1,0 +1,6 @@
+auburn:4
+brown:20
+black:2
+chestnut:4
+fair:80
+red:1

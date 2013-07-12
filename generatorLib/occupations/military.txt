@@ -1,0 +1,12 @@
+archer:3
+crossbowman:3
+drummer:1
+engineer:1
+swordsman:10
+halberdier:2
+knifeman:1
+mercenary:3
+pikeman:3
+scout:2
+sergeant:1
+spy:1

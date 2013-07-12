@@ -1,0 +1,9 @@
+snow:30
+rain:30
+overcast:20
+fog:10
+sun:10
+hailsorm:1
+windstorm:1
+thunder and lightning:1
+icestorm:1

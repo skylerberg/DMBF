@@ -1,0 +1,8 @@
+bargeman:3
+boatman:3
+ferryman:3
+hobbler:3
+navigator:2
+captain:1
+shipchandler:4
+fisherman:3

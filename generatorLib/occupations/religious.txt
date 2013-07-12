@@ -1,0 +1,13 @@
+abbess:2
+abbot:2
+almoner:2
+beadle:4
+bishop:1
+cantor:4
+priest:8
+friar:6
+monk:6
+ostiary:4
+pardoner:2
+sacristan:2
+sexton:4

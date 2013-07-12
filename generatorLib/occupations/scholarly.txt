@@ -1,0 +1,8 @@
+alchemist:2
+astrologer:1
+astronomer:1
+tutor:4
+mathematician:1
+philosopher:5
+scribe:5
+theologian:3

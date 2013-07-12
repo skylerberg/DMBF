@@ -1,0 +1,21 @@
+shoemaker:2
+furrier:1
+tailor:3
+jeweler:2
+baker:5
+mason:5
+carpenter:4
+spinster:4
+hatter:2
+butcher:5
+blacksmith:5
+roofer:5
+locksmith:2
+ropemaker:2
+tanner:3
+rugmaker:1
+bleacher:1
+glover:1
+buckle maker:1
+saddler:2
+purse maker:1

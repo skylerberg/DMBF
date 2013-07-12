@@ -1,0 +1,6 @@
+burglar:10
+pickpocket:10
+fence:2
+outlaw:1
+poacher:1
+thimblerigger:1

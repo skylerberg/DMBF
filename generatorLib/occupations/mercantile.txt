@@ -1,0 +1,20 @@
+apothecary:2
+banker:1
+boothman:5
+chapman:5
+collier:2
+colporteur:1
+grocer:5
+eggler:2
+fishmonger:2
+glass seller:1
+hay merchant:3
+innkeeper:4
+linen-draper:1
+mercer:2
+oil merchant:1
+plumer:1
+poulter:3
+skinner:2
+spicer:1
+wood seller:2

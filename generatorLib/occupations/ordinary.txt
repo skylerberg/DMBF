@@ -1,0 +1,3 @@
+hermit:1
+begger:98
+landlord:1
