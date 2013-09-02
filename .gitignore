@@ -1,1 +1,3 @@
 *.pyc
+sessionlog.txt
+errorlog.txt

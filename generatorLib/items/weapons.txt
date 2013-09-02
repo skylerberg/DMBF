@@ -1,0 +1,58 @@
+Dagger:100
+Punching Dagger:10
+Light Mace:100
+Sickle:50
+Heavy Mace:100
+Morningstar:50
+Shortspear:100
+Longspear:100
+Spear:100
+Heavy Crossbow:50
+Crossbow:50
+Dart:25
+Javelin:25
+Sling:50
+Throwing Axe:25
+Light Hammer:25
+Handaxe:100
+Kukri:10
+Light Pick:50
+Sap:100
+Short Sword:50
+Battle Axe:50
+Flail:25
+Longsword:50
+Heavy Pick:25
+Rapier:25
+Scimitar:10
+Trident:10
+Warhammer:10
+Falchion:10
+Glaive:10
+Halberd:50
+Lance:50
+Ranseur:10
+Scythe:50
+Longbow:50
+Composite Longbow:25
+Shortbow:50
+Composite Shortbow:25
+Kama:10
+Nunchaku:10
+Sai:10
+Siangham:5
+Bastard Sword:25
+Dwarven Waraxe:10
+Whip:100
+Orc Double Axe:5
+Spiked Chain:10
+Dire Flail:25
+Gnome Hooked Hammer:5
+Two-Bladed Sword:5
+Dwarven Urgrosh:5
+Bolas:25
+Hand Crossbow:25
+Repeating Heavy Crossbow:5
+Repeating Light Crossbow:5
+Net:25
+Shuriken:10

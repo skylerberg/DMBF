@@ -3,7 +3,10 @@ import random
 def dictionaryCreator(formattedFile):
     dictionary = dict()
     for line in formattedFile:
-       dictionary[line[0:line.find(":")]] = int(line.strip("\n")[line.find(":")+1:]) #takes each line and enters it into the dictionary
+       key, value = line.split(":")
+       key = key.strip()
+       value = int(value.strip())
+       dictionary[key] = value #takes each line and enters it into the dictionary
     formattedFile.close()
     return dictionary
 

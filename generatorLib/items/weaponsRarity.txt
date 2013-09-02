@@ -1,0 +1,58 @@
+Dagger : very common
+Punching Dagger : rare
+Light Mace : very common
+Sickle : common
+Heavy Mace : very common
+Morningstar : common
+Shortspear : very common
+Longspear : very common
+Spear : very common
+Heavy Crossbow : common
+Crossbow : common
+Dart : uncommon
+Javelin : uncommon
+Sling : common
+Throwing Axe : uncommon
+Light Hammer : uncommon
+Handaxe : very common
+Kukri : rare
+Light Pick : common
+Sap : very common
+Short Sword : common
+Battle Axe : common
+Flail : uncommon
+Longsword : common
+Heavy Pick : uncommon
+Rapier : uncommon
+Scimitar : rare
+Trident : rare
+Warhammer : rare
+Falchion : rare
+Glaive : rare
+Halberd : common
+Lance : common
+Ranseur : rare
+Scythe : common
+Longbow : common
+Composite Longbow : uncommon
+Shortbow : common
+Composite Shortbow : uncommon
+Kama : rare
+Nunchaku : rare
+Sai : rare
+Siangham : very rare
+Bastard Sword : uncommon
+Dwarven Waraxe : rare
+Whip : very common
+Orc Double Axe : very rare
+Spiked Chain : rare
+Dire Flail : uncommon
+Gnome Hooked Hammer : very rare
+Two-Bladed Sword : very rare
+Dwarven Urgrosh : very rare
+Bolas : uncommon
+Hand Crossbow : uncommon
+Repeating Heavy Crossbow : very rare
+Repeating Light Crossbow : very rare
+Net : uncommon
+Shuriken : rare

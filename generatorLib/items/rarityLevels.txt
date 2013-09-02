@@ -1,0 +1,6 @@
+very common:100
+common:50
+uncommon:25
+rare:10
+very rare:5
+obscure:1
