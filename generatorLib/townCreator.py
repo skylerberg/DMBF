@@ -1,14 +1,16 @@
 import random
-import math
 import os
 import generatorUtility as util
 
 def nameSelector():
-    return random.sample(util.listCreator(open(os.path.dirname(__file__) + "/towns/townNames.txt")),1)[0]
+    townNamesPath = os.path.join(os.path.dirname(__file__), "towns", "townNames.txt")
+    return util.selectFromFile(townNamesPath)
 
 def infastructureSelector(popK): #popK == population in thousands
     #In infrastructureRarities.txt the number represents the number of people expected to support an establishment
-    modifierDict = util.dictionaryCreator(open(os.path.dirname(__file__) + "/towns/infrastructureRarities.txt"))
+    rarityPath = os.path.join(os.path.dirname(__file__), "towns", "infrastructureRarities.txt")
+    with open(rarityPath) as f:
+        modifierDict = util.dictionaryCreator(list(f))
     infastructureDict = dict()
     for establishmentType in modifierDict:
         rarity = modifierDict[establishmentType]

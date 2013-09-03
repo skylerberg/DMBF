@@ -1,100 +1,99 @@
-A thief attempts to pickpocket the party
-Some soldiers stop the party for close inspection
-A wild animal attacks
-Highway men!
+A bard sings a song
+A bird shits on a player
+A bucket of shit is thrown out of a window
+A building collapses
+A bum yells about the end of the world
+A carriage rides by very quickly
+A carrier pigeon flies overhead
+A cart crashes
+A circus is in town
+A cleric attempts to perform an exorcism on a player
+A cleric blesses a player
 A drunk picks a fight
+A drunk talks himself up
+A dwarf is looking for something
+A foreigner gets the wrong impression of the party
+A group of children beggars follow the party
+A heavily guarded caravan passes
+A house is full of refugees
+A jester attempts to entertain the party
+A merchant attempts something a player owns
+A merchant tries to convince the party to try something new
 A merchant tries to sell you shabby wear
-Party overhear something they shouldn't have
-Party witnesses a crime
-Someone tries to give the party an animal
-An animal takes a liking to a player
-The party witnesses a fire
+A missionary tries to convert the party
+A mysterious ship is seen
+A paladin demands money for Heironeous
+A paladin is looking for able-bodied men to go on a quest
+A persistent beggar demands money
+A player gets stuck in traffic
+A player is asked his/her opinion on appraising an item
 A player is mistaken for someone else
 A player is offered a job
-A bird shits on a player
-A carriage rides by very quickly
-A persistent beggar demands money
-A bum yells about the end of the world
-A missionary tries to convert the party
-An NPC takes romantic interest in a player
-A merchant tries to convince the party to try something new
+A popular fortune-teller is in the area
 A public speaker is rallying a crowd
+A riot breaks out
+A rogue attempts to drug a player
+A section of a city is quarantined
+A ship crashes
+A thief attempts to pickpocket the party
+A tournament is cancelled
+A tournament is taking place
+A tree falls in the woods for a good reason
+A vicious dog threatens the party
+A wealthy merchant threatens to kill himself
+A wild animal attacks
+An NPC asks for a minor favor, then keeps asking for favors
+An NPC takes romantic interest in a player
+An abusive man chases his wife through the town
+An adventurer grieves over loses
+An animal takes a liking to a player
+An effigy is burned
+An official wants a bribe
+An oracle makes a dire prediction
+Avalanche!
+Bad water
+Fairies hitch a ride in a player's bag
+Highway men!
+Pirates attack!
+Some soldiers stop the party for close inspection
+Someone claims to be a player's relative
+Someone follows the party
+Someone frames the party for a petty crime
+Someone has a baby
+Someone is in the stocks
+Someone is paraded around town to be publicly shamed
+Someone is publicly flogged
+Someone talks up their baking
+Someone tells a crazy conspiracy story
+Someone tells a shocking, but true rumor
+Someone tells a tall tale
+Someone tries to give the party an animal
+Streaker!
+The party comes across a horse, later its owner
+The party encounters an injured person
+The party finds a corpse
+The party finds a shrine
+The party finds a suspicious egg
+The party finds an abandoned baby
+The party finds an interesting landmark
+The party finds someone they have seen before
+The party is asked to help at harvest time
+The party is paid in fake coins
+The party is privy to semi-public sex
+The party is separated in a crowd
+The party meets a con artist
+The party meets a mage
+The party meets an emperor/king/noble
+The party meets another party of adventurers
+The party overhears something they shouldn't have
+The party sees smoke in the distance
+The party sees some gambling
+The party sees some men playing chess
+The party sees two knights dueling
+The party witnesses a crime
+The party witnesses a fire
+The villagers attempt to rally a lynch mob
+There is a parade
 There is a public cat burning
 There is a public execution
 There is a public trial by ordeal
-The villagers attempt to rally a lynch mob
-An effigy is burned
-A popular fortune-teller is in the area
-A circus is in town
-A heavily guarded caravan passes
-A paladin demands money for Heironeous
-The party finds a corpse
-A drunk talks himself up
-A merchant attempts something a player owns
-The party finds an abandoned baby
-A jester attempts to entertain the party
-A bard sings a song
-An NPC asks for a minor favor, then keeps asking for favors
-A cleric blesses a player
-A mysterious ship is seen
-A building collapses
-The party sees two knights dueling
-Someone is in the stocks
-The party is privy to semi-public sex
-A bucket of shit is thrown out of a window
-The party meets another party of adventurers
-The party is asked to help at harvest time
-A player is asked his/her opinion on appraising an item
-A player gets stuck in traffic
-The party is separated in a crowd
-The party comes across a horse, later its owner
-A wealthy merchant threatens to kill himself
-A group of children beggars follow the party
-The party meets a mage
-The party meets a con artist
-An official wants a bribe
-The party meets an emperor/king/noble
-Fairies hitch a ride in a player's bag
-The party encounters an injured person
-A vicious dog threatens the party
-A tournament is taking place
-A tournament is cancelled
-A riot breaks out
-Bad water
-An abusive man chases his wife through the town
-Someone is paraded around town to be publicly shamed
-There is a parade
-An adventurer grieves over loses
-A carrier pigeon flies overhead
-A dwarf is looking for something
-The party comes across a Clemet
-A tree falls in the woods for a good reason
-The party sees smoke in the distance
-The party finds an interesting landmark
-The party finds a shrine
-A cleric attempts to perform an exorcism on a player
-A rogue attempts to drug a player
-Someone claims to be a player's relative
-Someone talks up their baking
-Someone tells a tall tale
-Someone tells a crazy conspiracy story
-Someone tells a shocking, but true rumor
-Someone has a baby
-Streaker!
-Avalanche!
-Pirates attack!
-A cart crashes
-A ship crashes
-Someone is publicly flogged
-A house is full of refugees
-The party is paid in fake coins
-A section of a city is quarantined
-A paladin is looking for able-bodied men to go on a quest
-Someone follows the party
-The party finds a suspicious egg
-An oracle makes a dire prediction
-The party sees some men playing chess
-The party sees some gambling
-A foreigner gets the wrong impression of the party
-Someone frames the party for a petty crime
-The party finds someone they have seen before

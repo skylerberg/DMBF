@@ -1,4 +1,5 @@
 import generatorUtility as util
 
 def weaponSelector():
-    return util.weightedSample(util.dictionaryCreator(open("items/weapons.txt")))
+    weaponsPath = os.path.join(os.path.dirname(__file__), "items", "weapons.txt")
+    return util.selectFromFile(weaponsPath)

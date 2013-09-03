@@ -1,6 +1,6 @@
-import random
 import generatorUtility as util
 import os
 
 def eventSelector():
-    return random.sample(util.listCreator(open(os.path.dirname(__file__) + "/events/events.txt")),1)[0]
+    eventsPath = os.path.join(os.path.dirname(__file__), "events", "events.txt")
+    return util.selectFromFile(eventsPath)

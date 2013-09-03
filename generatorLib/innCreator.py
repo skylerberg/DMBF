@@ -4,61 +4,52 @@ import os
 
 def nameSelector():
     typeSeedInt = random.randint(1,7)
+    nounPath = os.path.join(os.path.dirname(__file__), "taverns", "tavernNouns.txt")
+    descriptorPath = os.path.join(os.path.dirname(__file__), "taverns" , "tavernDescriptors.txt")
 
     if typeSeedInt <= 1: #The NOUN and NOUN
-        nounList = util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernNouns.txt"))
-        firstNounStr = str(nounList[random.randint(0,len(nounList)-1)])
-        secondNounStr = str(nounList[random.randint(0,len(nounList)-1)])
+        firstNounStr = util.selectFromFile(nounPath)
+        secondNounStr = util.selectFromFile(nounPath)
         while firstNounStr == secondNounStr:
-            secondNounStr = str(nounList[random.randint(0,len(nounList)-1)])
+            secondNounStr = util.selectFromFile(nounPath)
         return "The " + firstNounStr + " and " +  secondNounStr
 
     elif typeSeedInt <= 2: #The DESCRIPTOR NOUN and DESCRIPTOR NOUN
-        nounList = util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernNouns.txt"))
-        descriptorList =  util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernDescriptors.txt"))
-        firstNounStr = str(nounList[random.randint(0,len(nounList)-1)])
-        secondNounStr = str(nounList[random.randint(0,len(nounList)-1)])
-        firstDescriptorStr = str(descriptorList[random.randint(0,len(descriptorList)-1)])
-        secondDescriptorStr = str(descriptorList[random.randint(0,len(descriptorList)-1)])
+        firstNounStr = util.selectFromFile(nounPath)
+        secondNounStr = util.selectFromFile(nounPath)
+        firstDescriptorStr = util.selectFromFile(descriptorPath)
+        secondDescriptorStr = util.selectFromFile(descriptorPath)
         while firstNounStr == secondNounStr:
-            secondNounStr = str(nounList[random.randint(0,len(nounList)-1)])
+            secondNounStr = util.selectFromFile(nounPath)
         while firstDescriptorStr == secondDescriptorStr:
-            secondDescriptorStr = str(descriptorList[random.randint(0,len(descriptorList)-1)])
+            secondDescriptorStr = util.selectFromFile(descriptorPath)
         return "The " + firstDescriptorStr + " " + firstNounStr + " and " + secondDescriptorStr + " " + secondNounStr
 
     elif typeSeedInt <= 3: #The DESCRIPTOR NOUN and NOUN
-        nounList = util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernNouns.txt"))
-        descriptorList =  util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernDescriptors.txt"))
-        firstNounStr = str(nounList[random.randint(0,len(nounList)-1)])
-        secondNounStr = str(nounList[random.randint(0,len(nounList)-1)])
-        descriptorStr = str(descriptorList[random.randint(0,len(descriptorList)-1)])
+        firstNounStr = util.selectFromFile(nounPath)
+        secondNounStr = util.selectFromFile(nounPath)
+        descriptorStr = util.selectFromFile(descriptorPath)
         while firstNounStr == secondNounStr:
-            secondNounStr = str(nounList[random.randint(0,len(nounList)-1)])
+            secondNounStr = util.selectFromFile(nounPath)
         return "The " + descriptorStr + " " + firstNounStr + " and " + secondNounStr
 
     elif typeSeedInt <= 4: #The NOUN and DESCRIPTOR NOUN
-        nounList = util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernNouns.txt"))
-        descriptorList =  util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernDescriptors.txt"))
-        firstNounStr = str(nounList[random.randint(0,len(nounList)-1)])
-        secondNounStr = str(nounList[random.randint(0,len(nounList)-1)])
-        descriptorStr = str(descriptorList[random.randint(0,len(descriptorList)-1)])
+        firstNounStr = util.selectFromFile(nounPath)
+        secondNounStr = util.selectFromFile(nounPath)
+        descriptorStr = util.selectFromFile(descriptorPath)
         while firstNounStr == secondNounStr:
-            secondNounStr = str(nounList[random.randint(0,len(nounList)-1)])
+            secondNounStr = util.selectFromFile(nounPath)
         return "The " + firstNounStr + " and " + descriptorStr + " " + secondNounStr
 
     elif typeSeedInt <= 5: #The NOUN
-        nounList = util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernNouns.txt"))
-        nounStr = str(nounList[random.randint(0,len(nounList)-1)])
+        nounStr = util.selectFromFile(nounPath)
         return "The " + nounStr
 
     elif typeSeedInt <= 6: #The DESCRIPTOR Inn
-        descriptorList =  util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernDescriptors.txt"))
-        descriptorStr = str(descriptorList[random.randint(0,len(descriptorList)-1)])
+        descriptorStr = util.selectFromFile(descriptorPath)
         return "The " + descriptorStr + " Inn "
 
     elif typeSeedInt <= 7: #The DESCRIPTOR NOUN
-        nounList = util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernNouns.txt"))
-        descriptorList =  util.listCreator(open(os.path.dirname(__file__) + "/taverns/tavernDescriptors.txt"))
-        nounStr = str(nounList[random.randint(0,len(nounList)-1)])
-        descriptorStr = str(descriptorList[random.randint(0,len(descriptorList)-1)])
+        nounStr = util.selectFromFile(nounPath)
+        descriptorStr = util.selectFromFile(descriptorPath)
         return "The " + descriptorStr + " " + nounStr

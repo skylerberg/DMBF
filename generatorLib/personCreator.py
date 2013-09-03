@@ -2,6 +2,8 @@ import random
 import generatorUtility as util
 import os
 
+DEFAULT = "default"
+
 def genderSelector():
     if random.randint(0,1):
         return "male"
@@ -9,55 +11,51 @@ def genderSelector():
         return "female"
 
 def nameSelector(gender="male"):
-    try:
-        name = ""
-        if gender == "male":
-            maleNames = util.listCreator(open(os.path.dirname(__file__) + "/names/maleFirst.txt"))
-            name += str(maleNames[random.randint(0,len(maleNames)-1)])
-        else:
-            femaleNames = util.listCreator(open(os.path.dirname(__file__) + "/names/femaleFirst.txt"))
-            name += str(femaleNames[random.randint(0,len(femaleNames)-1)])
-        name += " "
-        lastNames = util.listCreator(open(os.path.dirname(__file__) + "/names/last.txt"))
-        name += str(lastNames[random.randint(0,len(lastNames)-1)])
-        return name
-    except (IndexError):
-        print "!!!Index error in nameSelector!!!"
-        print '!!!Make sure gender != ""!!!'
-        return "UNABLE TO GENERATE NAME"
+    name = ""
+    if gender == "male":
+        maleNamesPath = os.path.join(os.path.dirname(__file__), "names", "maleFirst.txt")
+        name += util.selectFromFile(maleNamesPath)
+    else:
+        femaleNamesPath = os.path.join(os.path.dirname(__file__), "names", "femaleFirst.txt")
+        name += util.selectFromFile(femaleNamesPath)
+    name += " "
+    lastNamesPath = os.path.join(os.path.dirname(__file__), "names", "last.txt")
+    name += util.selectFromFile(lastNamesPath)
+    return name
 
-def occupationTypeSelector(excludedOccupationTypes = set(),setting="urban"):
-    allOccupationTypes = util.dictionaryCreator(open(os.path.dirname(__file__) + "/occupations/typesList" + setting.capitalize() + ".txt"))
-    allowedOccupationTypes = dict()
-    for occType in allOccupationTypes:
-        if occType not in excludedOccupationTypes:
-            allowedOccupationTypes[occType] = allOccupationTypes[occType]
-    return util.weightedSample(allowedOccupationTypes)
+def occupationTypeSelector(excluded=None,setting="urban"):
+    settingFileName = "typesList" + setting.capitalize() + ".txt"
+    occupationTypesPath = os.path.join(os.path.dirname(__file__), "occupations", settingFileName)
+    retVal = util.selectFromFile(occupationTypesPath)
+    if retVal == excluded:  # if we get the excluded value, try again
+        return occupationTypeSelector(excluded,setting)
+    return retVal
 
-def occupationSelector(occupationType="default"):
-    if occupationType == "default":
+def occupationSelector(occupationType=DEFAULT):
+    if occupationType == DEFAULT:
         occupationType = occupationTypeSelector()
-    try:
-        occupationWeight = util.dictionaryCreator(open(os.path.dirname(__file__) + "/occupations/"+occupationType+".txt"))
-    except(IOError, TypeError):
-        print ("ERROR: unable to understand occupation type " + occupationType)
-        return "no occupation"
-    return util.weightedSample(occupationWeight)
+    occupationPath = os.path.join(os.path.dirname(__file__), "occupations", occupationType + ".txt")
+    return util.selectFromFile(occupationPath)
 
 def eyeColorSelector():
-    return util.weightedSample(util.dictionaryCreator(open(os.path.dirname(__file__) + "/eyes/eyeColor.txt")))
+    eyeColorPath = os.path.join(os.path.dirname(__file__), "eyes", "eyeColor.txt")
+    return util.selectFromFile(eyeColorPath)
 
 def hairColorSelector(eyecolor):
-    return util.weightedSample(util.dictionaryCreator(open(os.path.dirname(__file__) + "/hair/"+eyecolor+"EyesHair.txt")))
+    hairColorPath = os.path.join(os.path.dirname(__file__), "hair", eyecolor + "EyesHair.txt")
+    return util.selectFromFile(hairColorPath)
 
 def hairTypeSelector():
-    return util.weightedSample(util.dictionaryCreator(open(os.path.dirname(__file__) + "/hair/hairTypes.txt")))
+    hairTypePath = os.path.join(os.path.dirname(__file__), "hair", "hairTypes.txt")
+    return util.selectFromFile(hairTypePath)
 
 def hairLengthSelector():
-    return util.weightedSample(util.dictionaryCreator(open(os.path.dirname(__file__) + "/hair/hairLengths.txt")))
+    hairLengthsPath = os.path.join(os.path.dirname(__file__), "hair", "hairLengths.txt")
+    return util.selectFromFile(hairLengthsPath)
 
 def traitSelector():
-    return random.sample(util.listCreator(open(os.path.dirname(__file__) + "/traits/traits.txt")),1)[0]
+    traitsPath = os.path.join(os.path.dirname(__file__), "traits", "traits.txt")
+    return util.selectFromFile(traitsPath)
 
 def ageSelector(ageType):
     age = 0

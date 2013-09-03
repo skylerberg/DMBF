@@ -2,6 +2,7 @@ from generatorLib import personCreator
 from generatorLib import innCreator
 from generatorLib import weatherCreator
 from generatorLib import eventCreator
+from generatorLib import plotCreator
 from gameObjects.character import Character
 from gameObjects.town import Town
 from Tkinter import *
@@ -173,4 +174,14 @@ class EventPane(Pane):
 
     def pressed(self):
         print eventCreator.eventSelector()
+        self.adjustReadPoint()
+
+
+class PlotPane(Pane):
+
+    def __init__(self, master, readPoint):
+        super(PlotPane,self).__init__(master,readPoint,"Generate Plot")
+
+    def pressed(self):
+        print plotCreator.plotSelector()
         self.adjustReadPoint()
