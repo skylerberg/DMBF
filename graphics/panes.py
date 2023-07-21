@@ -6,6 +6,7 @@ from generatorLib import plotCreator
 from gameObjects.character import Character
 from gameObjects.town import Town
 from tkinter import *
+import sys
 
 class Pane(object):
     def __init__(self, master, readPoint, mainButtonText):
