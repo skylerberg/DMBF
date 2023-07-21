@@ -1,6 +1,6 @@
 import random
 import os
-import generatorUtility as util
+from .generatorUtility import selectFromFile
 
 UNDEFINED = "UNDEFINED"
 
@@ -9,4 +9,4 @@ def weatherSelector(season="winter",yesterday=UNDEFINED):
         if random.randint(0,1):
             return yesterday
     seasonPathName = os.path.join(os.path.dirname(__file__), "weather", season + ".txt")
-    return util.selectFromFile(seasonPathName)
+    return selectFromFile(seasonPathName)

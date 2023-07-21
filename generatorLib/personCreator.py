@@ -1,5 +1,5 @@
 import random
-import generatorUtility as util
+from .generatorUtility import selectFromFile
 import os
 
 DEFAULT = "default"
@@ -14,19 +14,19 @@ def nameSelector(gender="male"):
     name = ""
     if gender == "male":
         maleNamesPath = os.path.join(os.path.dirname(__file__), "names", "maleFirst.txt")
-        name += util.selectFromFile(maleNamesPath)
+        name += selectFromFile(maleNamesPath)
     else:
         femaleNamesPath = os.path.join(os.path.dirname(__file__), "names", "femaleFirst.txt")
-        name += util.selectFromFile(femaleNamesPath)
+        name += selectFromFile(femaleNamesPath)
     name += " "
     lastNamesPath = os.path.join(os.path.dirname(__file__), "names", "last.txt")
-    name += util.selectFromFile(lastNamesPath)
+    name += selectFromFile(lastNamesPath)
     return name
 
 def occupationTypeSelector(excluded=None,setting="urban"):
     settingFileName = "typesList" + setting.capitalize() + ".txt"
     occupationTypesPath = os.path.join(os.path.dirname(__file__), "occupations", settingFileName)
-    retVal = util.selectFromFile(occupationTypesPath)
+    retVal = selectFromFile(occupationTypesPath)
     if retVal == excluded:  # if we get the excluded value, try again
         return occupationTypeSelector(excluded,setting)
     return retVal
@@ -35,27 +35,27 @@ def occupationSelector(occupationType=DEFAULT):
     if occupationType == DEFAULT:
         occupationType = occupationTypeSelector()
     occupationPath = os.path.join(os.path.dirname(__file__), "occupations", occupationType + ".txt")
-    return util.selectFromFile(occupationPath)
+    return selectFromFile(occupationPath)
 
 def eyeColorSelector():
     eyeColorPath = os.path.join(os.path.dirname(__file__), "eyes", "eyeColor.txt")
-    return util.selectFromFile(eyeColorPath)
+    return selectFromFile(eyeColorPath)
 
 def hairColorSelector(eyecolor):
     hairColorPath = os.path.join(os.path.dirname(__file__), "hair", eyecolor + "EyesHair.txt")
-    return util.selectFromFile(hairColorPath)
+    return selectFromFile(hairColorPath)
 
 def hairTypeSelector():
     hairTypePath = os.path.join(os.path.dirname(__file__), "hair", "hairTypes.txt")
-    return util.selectFromFile(hairTypePath)
+    return selectFromFile(hairTypePath)
 
 def hairLengthSelector():
     hairLengthsPath = os.path.join(os.path.dirname(__file__), "hair", "hairLengths.txt")
-    return util.selectFromFile(hairLengthsPath)
+    return selectFromFile(hairLengthsPath)
 
 def traitSelector():
     traitsPath = os.path.join(os.path.dirname(__file__), "traits", "traits.txt")
-    return util.selectFromFile(traitsPath)
+    return selectFromFile(traitsPath)
 
 def ageSelector(ageType):
     age = 0

@@ -1,5 +1,5 @@
-from panes import *
-from Tkinter import Menu
+from .panes import *
+from tkinter import Menu
 import sys
 
 mainPane = None
@@ -20,7 +20,7 @@ def addMenuBar(root, pane):
     root.config(menu=menubar)
 
 def clearPane(currentPane): #must be called by any function that creates a pane
-    print ("NEW WINDOW")
+    print("NEW WINDOW")
     currentPane.frame.grid_forget()
     currentPane.frame.destroy()
 

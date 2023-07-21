@@ -6,11 +6,11 @@ class Town(object):
         self.infastructureDict = townCreator.infastructureSelector(popK)
 
     def output(self):
-        print (self.name + ":")
+        print(self.name + ":")
         templist = []
         for item in self.infastructureDict:
             templist.append(item + ":" + str(self.infastructureDict[item]))
         templist.sort()
         for item in templist:
-            print (item)
-        print ("")
+            print(item)
+        print("")

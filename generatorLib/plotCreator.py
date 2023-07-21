@@ -1,13 +1,13 @@
-from personCreator import *
+from .personCreator import *
 import random
-import generatorUtility as util
+from .generatorUtility import selectFromFile
 import os
 
 def plotSelector():
     motivePath = os.path.join(os.path.dirname(__file__), "plots", "motives.txt")
     actionPath = os.path.join(os.path.dirname(__file__), "plots", "actupon.txt")
-    motive = lambda:util.selectFromFile(motivePath)
-    action = lambda:util.selectFromFile(actionPath)
+    motive = lambda: selectFromFile(motivePath)
+    action = lambda: selectFromFile(actionPath)
     charList = ["Alice","Bob","Casey"]
     mover = "Alice" # nameSelector(genderSelector())  # mover as in an Aristotle type way
     movee = "Bob" # nameSelector(genderSelector())

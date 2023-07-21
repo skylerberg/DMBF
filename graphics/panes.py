@@ -5,7 +5,7 @@ from generatorLib import eventCreator
 from generatorLib import plotCreator
 from gameObjects.character import Character
 from gameObjects.town import Town
-from Tkinter import *
+from tkinter import *
 
 class Pane(object):
     def __init__(self, master, readPoint, mainButtonText):
@@ -29,7 +29,7 @@ class Pane(object):
         self.output.see(END)
 
     def pressed(self):
-        print "Always override pressed and include a call to self.adjustReadPoint"
+        print("Always override pressed and include a call to self.adjustReadPoint")
         self.adjustReadPoint()
 
 class CharacterPane(Pane):
@@ -81,7 +81,7 @@ class StatsPane(Pane):
         super(StatsPane,self).__init__(master,readPoint,"Tally")
 
     def populate(self,trait="occupations",sampleSize=10000):
-        print ("Generating "+trait+" for a sample size of "+str(sampleSize)+".") ##Loading info
+        print("Generating "+trait+" for a sample size of "+str(sampleSize)+".") ##Loading info
         occurrences = dict()
         if trait == "occupations":
             for iteration in xrange(sampleSize):
@@ -99,7 +99,7 @@ class StatsPane(Pane):
             sortable.append(item + " - " + str(float(occurrences[item])/(sampleSize/100)) + "%") ##percentage
         sortable.sort()
         for line in sortable:
-            print (line)
+            print(line)
 
     def pressed(self,):
         self.statistics(*self.populate())
@@ -126,7 +126,7 @@ class WeatherPane(Pane):
 
     def pressed(self):
         weather = weatherCreator.weatherSelector(season=self.seasonSelected.get(),yesterday=self.yesterday)
-        print weather
+        print(weather)
         self.yesterday = weather
         self.adjustReadPoint()
 
@@ -163,7 +163,7 @@ class InnPane(Pane):
         super(InnPane,self).__init__(master,readPoint,"Generate Tavern Name")
 
     def pressed(self):
-        print innCreator.nameSelector()
+        print(innCreator.nameSelector())
         self.adjustReadPoint()
 
 
@@ -173,7 +173,7 @@ class EventPane(Pane):
         super(EventPane,self).__init__(master,readPoint,"Generate Event")
 
     def pressed(self):
-        print eventCreator.eventSelector()
+        print(eventCreator.eventSelector())
         self.adjustReadPoint()
 
 
@@ -183,5 +183,5 @@ class PlotPane(Pane):
         super(PlotPane,self).__init__(master,readPoint,"Generate Plot")
 
     def pressed(self):
-        print plotCreator.plotSelector()
+        print(plotCreator.plotSelector())
         self.adjustReadPoint()

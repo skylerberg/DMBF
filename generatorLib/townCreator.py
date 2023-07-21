@@ -1,10 +1,10 @@
 import random
 import os
-import generatorUtility as util
+from .generatorUtility import selectFromFile
 
 def nameSelector():
     townNamesPath = os.path.join(os.path.dirname(__file__), "towns", "townNames.txt")
-    return util.selectFromFile(townNamesPath)
+    return selectFromFile(townNamesPath)
 
 def infastructureSelector(popK): #popK == population in thousands
     #In infrastructureRarities.txt the number represents the number of people expected to support an establishment

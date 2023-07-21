@@ -13,4 +13,4 @@ with open(sys.argv[1]) as inFile:
         item, rarity = line.split(":")
         item = item.strip()
         rarity = rarity.strip().lower()
-        print item + ":" + rarityToNum[rarity]
+        print(item + ":" + rarityToNum[rarity])
